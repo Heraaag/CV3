@@ -1,0 +1,21 @@
+# Python packages for the CV3 exercises, tested with Python 3.12.
+# The same file is used for local installs (pip or uv) and on Google Colab.
+# We only give lower bounds: Colab's preinstalled packages (e.g. torch) satisfy them, so pip does not reinstall them there.
+torch>=2.5
+torchvision>=0.20
+numpy>=1.26
+scipy>=1.11
+pandas>=2.0
+matplotlib>=3.8
+pillow>=10.0
+scikit-learn>=1.3
+scikit-image>=0.22
+opencv-python>=4.8
+tqdm>=4.66
+certifi>=2024.2.2  # CA bundle for the Penn-Fudan download (exercise 01)
+ipywidgets>=7.7
+typing_extensions>=4.8
+# motmetrics 1.4.0 (latest release) does not work with numpy 2; use the fixed develop commit until a new release
+motmetrics @ git+https://github.com/cheind/py-motmetrics.git@e5ae766fab03b804f485d7c95ee1809b94d32dcc
+lap>=0.5.12
+panopticapi @ git+https://github.com/cocodataset/panopticapi.git

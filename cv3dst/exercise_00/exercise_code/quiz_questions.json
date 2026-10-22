@@ -1,0 +1,100 @@
+{
+  "exercise": "exercise00",
+  "n": 5,
+  "max_options": 4,
+  "questions": [
+    {
+      "id": "pytorch",
+      "q": "Which of the following statements about PyTorch are true?",
+      "options": {
+        "a": "PyTorch is a deep learning framework that provides automatic differentiation.",
+        "b": "PyTorch is a programming language.",
+        "c": "PyTorch is purely written in Python.",
+        "d": "PyTorch can only be used for computer vision tasks.",
+        "e": "There are other deep learning frameworks available like TensorFlow, Keras, and JAX."
+      }
+    },
+    {
+      "id": "pytorch_vs_numpy",
+      "q": "Which of the following statements about PyTorch and NumPy are true?",
+      "options": {
+        "a": "PyTorch tensors can be converted to NumPy arrays and vice versa.",
+        "b": "PyTorch tensors support GPU acceleration, while NumPy arrays do not.",
+        "c": "All numpy functions are available in PyTorch and have exactly the same interface.",
+        "d": "PyTorch tensors are immutable, while NumPy arrays are mutable. (Mutable means they can be changed after creation)"
+      }
+    },
+    {
+      "id": "no_grad",
+      "q": "What does `torch.no_grad()` do?",
+      "options": {
+        "a": "It disables gradient tracking for all operations inside the block.",
+        "b": "It switches layers like dropout to evaluation mode.",
+        "c": "It reduces the memory usage during inference.",
+        "d": "It sets the gradients of all parameters to zero."
+      }
+    },
+    {
+      "id": "zero_grad",
+      "q": "Why do we call `optimizer.zero_grad()` in every training step?",
+      "options": {
+        "a": "`backward()` accumulates gradients by default.",
+        "b": "It resets the learning rate.",
+        "c": "It re-initializes the weights of the network."
+      }
+    },
+    {
+      "id": "broadcasting",
+      "q": "Which tensor shapes can be added to a tensor of shape `(3, 1, 5)` with broadcasting?",
+      "options": {
+        "a": "`(5,)`",
+        "b": "`(4, 5)`",
+        "c": "`(3, 2)`",
+        "d": "`(2, 1, 5)`"
+      }
+    },
+    {
+      "id": "dataloader",
+      "q": "Which statements about a `DataLoader` are true?",
+      "options": {
+        "a": "`shuffle=True` changes the accuracy computed over the full test set.",
+        "b": "It combines the samples of a `Dataset` into batches.",
+        "c": "`num_workers > 0` loads batches in parallel worker processes."
+      }
+    },
+    {
+      "id": "gradient_descent",
+      "q": "If we want to train a neural network via gradient descent, which things do we need to pay attention to?",
+      "options": {
+        "a": "Designing a suitable loss function for the task.",
+        "b": "Choosing an appropriate optimizer and learning rate.",
+        "c": "All operations of pytorch are differentiable, so we can use them without constraints.",
+        "d": "With momentum, every update only depends on the gradient of the current batch.",
+        "e": "All weights can be initialized to zero, because gradient descent breaks the symmetry.",
+        "f": "Gradient descent can directly maximize the classification accuracy.",
+        "g": "Computing the gradient of every parameter needs its own forward pass.",
+        "h": "We don't require a convex loss function as momentum and adaptive optimizers can potentially escape local minima."
+      }
+    },
+    {
+      "id": "cpu_vs_gpu",
+      "q": "Which statements about CPU and GPU are true?",
+      "options": {
+        "a": "GPUs are specialized hardware for parallel computations, especially for matrix operations.",
+        "b": "CPUs have more cores than GPUs.",
+        "c": "PyTorch will automatically move tensors between CPU and GPU.",
+        "d": "Using a GPU always results in faster training times compared to using a CPU."
+      }
+    },
+    {
+      "id": "data_augmentation",
+      "q": "Which statements about data augmentation are true?",
+      "options": {
+        "a": "Data augmentation can help prevent overfitting by increasing the diversity of the training data.",
+        "b": "Data augmentation is only useful for image data.",
+        "c": "You must apply exactly the same data augmentation to every sample in the batch to ensure consistency.",
+        "d": "Data augmentation can include techniques like rotation, flipping, and scaling of images."
+      }
+    }
+  ]
+}
